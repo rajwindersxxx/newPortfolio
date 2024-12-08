@@ -2,7 +2,8 @@ import { GitHubIcon, LinkedInIcon, LogoIcon, MenuIcon } from './Icons';
 
 export default function Header() {
   return (
-    <header className="text-teal-300  border-b-[1px] border-b-secondaryColor bg-gradient-to-l  from-backgroundColor via-backgroundColor  to-PrimaryColor fixed w-full top-0">
+    <header className="text-teal-300 border-b-[1px] border-b-secondaryColor bg-gradient-to-l from-backgroundColor/75 via-backgroundColor/75 to-PrimaryColor/75 fixed w-full top-0 backdrop-blur-md ">
+
       <nav className="flex justify-between container p-4 m-auto items-center ">
         <div className="flex gap-4 flex-col">
           <a href="#" className='flex gap-4 items-center'>
