@@ -1,3 +1,5 @@
+import { BootStrapIcon } from './Icons';
+
 export default function About() {
   return (
     <section id="about" className="about_section container">
@@ -5,7 +7,7 @@ export default function About() {
         <div className="profile_image">
           <img
             className="lazy"
-            src="./src/images/Profile-img.jpg"
+            src="./img/Profile-img.jpg"
             alt="Profile pic"
             width="104%"
           />
@@ -23,10 +25,7 @@ export default function About() {
         <div className="icons_block lazy">
           <div className="all_icons">
             <div>
-              <img
-                src="./src/icons/bootstrap-original.svg"
-                alt="skills_icons"
-              />
+              <BootStrapIcon  className=''/>
             </div>
             <div></div>
             <div>

@@ -1,3 +1,4 @@
+import About from './About';
 import Header from './Header';
 import Hero from './Hero';
 import ParticleEffect from './ParticleEffect';
@@ -8,6 +9,7 @@ function App() {
       <ParticleEffect />
       <Header />
       <Hero />
+      <About/>
     </>
   );
 }
