@@ -61,7 +61,7 @@ export default function ParticleEffect() {
           color: '#2dd4bf',
           distance: 150,
           enable: true,
-          opacity: 0.5,
+          opacity: 0.2,
           width: 1,
         },
         move: {
@@ -81,7 +81,7 @@ export default function ParticleEffect() {
           value: 150,
         },
         opacity: {
-          value: 0.5,
+          value: 0.2,
         },
         shape: {
           type: 'circle',

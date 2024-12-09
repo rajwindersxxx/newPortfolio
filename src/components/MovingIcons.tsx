@@ -15,7 +15,6 @@ import {
   VSCodeIcon,
 } from './Icons';
 
-
 function MovingIcons() {
   const [icons, setIcons] = useState([
     <HtmlIcon />,
@@ -42,17 +41,18 @@ function MovingIcons() {
   }, []);
   return (
     <div className="glassBackground container max-w-screen-md h-[100px]  rounded-lg overflow-hidden border-[1px]">
-      <div>
-        <AnimatePresence initial={true} mode="popLayout">
-          <motion.div
-            key={crypto.randomUUID()}
-            className="flex justify-center flex-row gap-16 p-8 overflow-hidden absolute "
-            initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -100 }}
-          >
-            {icons.map((item) => item)}
-          </motion.div>
+      <div className="flex justify-center flex-row gap-16 p-8 overflow-hidden">
+        <AnimatePresence initial={true} mode="wait">
+          {icons.map((item) => (
+            <motion.div
+              key={crypto.randomUUID()}
+              layout
+              initial={{ x: 0 }}
+              animate={{ x: -100 }}
+            >
+              {item}
+            </motion.div>
+          ))}
         </AnimatePresence>
       </div>
     </div>
