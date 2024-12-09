@@ -1,3 +1,5 @@
+import SkillsDescription from '../components/skillsDescription';
+
 export default function Skills() {
   const skillData = [
     {
@@ -20,7 +22,7 @@ export default function Skills() {
         'rechart',
       ],
       img: './img/computer.gif',
-      id: 1
+      id: 1,
     },
     {
       title: 'Backend skills',
@@ -38,7 +40,7 @@ export default function Skills() {
         'express',
       ],
       img: './img/backend.gif',
-      id: 2
+      id: 2,
     },
     {
       title: 'Other skills',
@@ -59,7 +61,7 @@ export default function Skills() {
         'chatGpt',
       ],
       img: './img/skills.gif',
-      id: 3
+      id: 3,
     },
   ];
   return (
@@ -70,20 +72,7 @@ export default function Skills() {
       <h2 className="text-4xl text-center mb-8">Skills and Experiences</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-12 p-8 items-center justify-center">
         {skillData.map((data) => (
-          <>
-            <div className={`${data.id === 2 ? 'md:justify-self-end' : ''}`}>
-              <img src={data.img} alt="image" className="w-full rounded-md lg:w-[32rem] opacity-85" />
-            </div>
-            <div className={`flex flex-col gap-4 ${data.id === 2 ? 'md:row-start-2' : ''}`}>
-              <h3 className="text-3xl">{data.title}</h3>
-              <p className={`text-teal-400 mb-16`}>{data.description}</p>
-              <div className="flex gap-2 flex-wrap ">
-                {data.tags.map((tag) => (
-                  <span className="px-2 bg-backgroundColor border-[1px] border-teal-900 rounded-md text-sm">#{tag}</span>
-                ))}
-              </div>
-            </div>
-          </>
+          <SkillsDescription data={data} key={crypto.randomUUID()} />
         ))}
       </div>
       <p className="section_description">

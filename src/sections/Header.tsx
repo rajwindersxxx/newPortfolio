@@ -7,8 +7,8 @@ import {
 export default function Header() {
   return (
     <header className="text-teal-300 glassBackground border-b-[1px] fixed w-full top-0 z-50 ">
-      <nav className="flex justify-between container p-4 m-auto items-center ">
-        <div className="flex gap-4 flex-col">
+      <nav className="flex justify-between container py-4 m-auto items-center ">
+        <div className="flex gap-4 flex-col w-48">
           <a href="#" className="flex gap-4 items-center">
             <div className="rotateIcon">
               <LogoIcon
@@ -22,24 +22,24 @@ export default function Header() {
         <div className="nav_links">
           <ul className="md:flex justify-center gap-8 hidden ">
             <li className="hover:text-teal-100 py-1 cursor-pointer transition-all">
-              <a href="#">Home</a>
+              <a className='p-2' href="#">Home</a>
             </li>
             <li className="hover:text-teal-100 py-1 cursor-pointer transition-all">
-              <a href="#about">About</a>
+              <a className='p-2' href="#about">About</a>
             </li>
             <li className="hover:text-teal-100 py-1 cursor-pointer transition-all">
-              <a href="#skills">Skills</a>
+              <a className='p-2' href="#skills">Skills</a>
             </li>
             <li className="hover:text-teal-100 py-1 cursor-pointer transition-all">
-              <a href="#projects">Projects</a>
+              <a className='p-2' href="#projects">Projects</a>
             </li>
             <li className="hover:text-teal-100 py-1 cursor-pointer transition-all">
-              <a href="#contact">Contact</a>
+              <a className='p-2' href="#contact">Contact</a>
             </li>
           </ul>
         </div>
         <div className="flex ">
-          <ul className="flex gap-4 justify-center px-4">
+          <ul className="flex gap-4 justify-end  px-4 w-48">
             <li>
               <a href="#contact" aria-label="Visit GitHub">
                 <GitHubIcon className="fill-teal-200  hover:fill-teal-100 w-6 h-6" />
