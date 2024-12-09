@@ -3,14 +3,14 @@
 export default function About() {
   
   return (
-    <section id="about" className="h-full">
-      <div className="container flex flex-col gap-8 justify-center items-center text-center m-auto">
+    <section id="about" className="h-screen ">
+      <div className="container flex flex-col gap-8 justify-center items-center text-center m-auto h-full">
         <div className="">
           <img
             className="w-64 rounded-full border-4 border-teal-600 "
             src="./img/Profile-img.jpg"
             alt="Profile pic"
-            width="104%"
+            width="100%"
           />
         </div>
         <h2 className="text-teal-200 text-3xl text-center">I’m Rajwinder</h2>
@@ -22,7 +22,6 @@ export default function About() {
           skills, and projects!
         </p>
       </div>
-       
     </section>
   );
 }

@@ -3,6 +3,7 @@ import Header from './sections/Header';
 import Hero from './sections/Hero';
 import ParticleEffect from './components/ParticleEffect';
 import MovingIcons from './components/MovingIcons';
+import Skills from './sections/Skills';
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
         <MovingIcons />
       </Hero>
       <About />
+      <Skills />
     </>
   );
 }

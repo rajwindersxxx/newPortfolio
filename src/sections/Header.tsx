@@ -5,13 +5,12 @@ import {
   MenuIcon,
 } from '../components/Icons';
 export default function Header() {
- 
   return (
-    <header className="text-teal-300 glassBackground border-b-[1px] fixed w-full top-0  ">
+    <header className="text-teal-300 glassBackground border-b-[1px] fixed w-full top-0 z-50 ">
       <nav className="flex justify-between container p-4 m-auto items-center ">
         <div className="flex gap-4 flex-col">
           <a href="#" className="flex gap-4 items-center">
-            <div className='rotateIcon'>
+            <div className="rotateIcon">
               <LogoIcon
                 className=" w-12 h-12 rotate-[45deg] stroke-teal-400"
                 storkWidth={65}
