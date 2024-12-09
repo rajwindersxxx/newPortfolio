@@ -1,0 +1,25 @@
+my-portfolio/
+│
+├── public/
+│   ├── index.html            # Main HTML file, including root div for React app
+│   └── assets/               # Static assets like images, icons, fonts, etc.
+│
+├── src/
+│   ├── components/           # Reusable UI components (buttons, icons, etc.)
+│   ├── sections/             # Sections of your portfolio (About, Skills, Projects, etc.)
+│   ├── pages/                # Page-level components (HomePage, ContactPage, etc.)
+│   ├── utils/                # Utility functions, helpers, etc.
+│   ├── services/             # API calls, services for external data fetching
+│   ├── hooks/                # Custom React hooks
+│   ├── assets/               # Any JS, CSS, or image assets used in the app
+│   ├── App.js                # Main App component (Routing & Layouts)
+│   ├── index.js              # Entry point of your React app
+│   ├── styles/               # Global styles and theme setup (CSS/SCSS)
+│   ├── App.css               # Base styling for the app
+│   └── index.scss            # SCSS file for global styles (or use styled-components)
+│
+├── .env                      # Environment variables (if required)
+├── .gitignore                # Gitignore file to exclude unwanted files
+├── package.json              # Project dependencies and scripts
+├── README.md                 # Project documentation
+└── tsconfig.json (if using TypeScript) # TypeScript configuration

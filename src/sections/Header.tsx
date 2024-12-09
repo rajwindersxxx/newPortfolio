@@ -1,15 +1,19 @@
-import { GitHubIcon, LinkedInIcon, LogoIcon, MenuIcon } from './Icons';
+import {
+  GitHubIcon,
+  LinkedInIcon,
+  LogoIcon,
+  MenuIcon,
+} from '../components/Icons';
 
 export default function Header() {
   return (
-    <header className="text-teal-300 border-b-[1px] border-b-secondaryColor bg-gradient-to-l from-backgroundColor/75 via-backgroundColor/75 to-PrimaryColor/75 fixed w-full top-0 backdrop-blur-md ">
-
+    <header className="text-teal-300 glassBackground border-b-[1px] fixed w-full top-0  ">
       <nav className="flex justify-between container p-4 m-auto items-center ">
         <div className="flex gap-4 flex-col">
-          <a href="#" className='flex gap-4 items-center'>
+          <a href="#" className="flex gap-4 items-center">
             <div>
               <LogoIcon
-                className=" w-12 rotate-[45deg] stroke-teal-400"
+                className=" w-12 h-12 rotate-[45deg] stroke-teal-400"
                 storkWidth={65}
               />
             </div>

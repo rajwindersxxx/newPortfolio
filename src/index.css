@@ -5,4 +5,19 @@ body {
   @apply bg-backgroundColor;
 }
 
+.icons {
+  transition: all 0.3s;
+  animation: moveIcons 125s linear infinite;
+}
+@keyframes moveIcons {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
 
+.glassBackground {
+  @apply  border-secondaryColor bg-gradient-to-l from-backgroundColor/75 via-backgroundColor/75 to-PrimaryColor/75 backdrop-blur-md;
+}

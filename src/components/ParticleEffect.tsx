@@ -7,11 +7,10 @@ import {
   OutMode,
 } from '@tsparticles/engine';
 
-import { loadSlim } from '@tsparticles/slim'; 
+import { loadSlim } from '@tsparticles/slim';
 
 export default function ParticleEffect() {
   const [init, setInit] = useState(false);
-
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
@@ -90,7 +89,6 @@ export default function ParticleEffect() {
         size: {
           value: { min: 1, max: 8 },
         },
-       
       },
       detectRetina: true,
     }),
@@ -110,5 +108,4 @@ export default function ParticleEffect() {
   }
 
   return <></>;
-};
-
+}
