@@ -1,11 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
-import {
-  type Container,
-  type ISourceOptions,
-  MoveDirection,
-  OutMode,
-} from '@tsparticles/engine';
+import { type Container, type ISourceOptions, MoveDirection, OutMode } from '@tsparticles/engine';
 
 import { loadSlim } from '@tsparticles/slim';
 
@@ -98,11 +93,7 @@ export default function ParticleEffect() {
   if (init) {
     return (
       <div className="fixed w-full h-full -z-10">
-        <Particles
-          id="tsparticles"
-          particlesLoaded={particlesLoaded}
-          options={options}
-        />
+        <Particles id="tsparticles" particlesLoaded={particlesLoaded} options={options} />
       </div>
     );
   }

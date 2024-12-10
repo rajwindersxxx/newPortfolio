@@ -13,9 +13,12 @@
     "@tsparticles/all": "^3.7.1",
     "@tsparticles/engine": "^3.7.1",
     "@tsparticles/react": "^3.0.0",
+    "d3-scale": "^4.0.2",
+    "d3-scale-chromatic": "^3.1.0",
     "motion": "^11.13.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "recharts": "^2.14.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",

@@ -44,12 +44,7 @@ function MovingIcons() {
       <div className="flex justify-center flex-row gap-16 p-8 overflow-hidden">
         <AnimatePresence initial={true} mode="popLayout">
           {icons.map((item) => (
-            <motion.div
-              key={crypto.randomUUID()}
-              layout
-              initial={{ x: 0 }}
-              animate={{ x: -100 }}
-            >
+            <motion.div key={crypto.randomUUID()} layout initial={{ x: 0 }} animate={{ x: -100 }}>
               {item}
             </motion.div>
           ))}

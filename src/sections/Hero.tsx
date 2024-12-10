@@ -1,9 +1,7 @@
-
-
 interface props {
   children?: React.ReactNode;
 }
-export default function Hero({children}: props) {
+export default function Hero({ children }: props) {
   return (
     <section id="home" className="h-full">
       <div className="container mx-auto h-[100vh]  text-center flex flex-col gap-4 p-8 justify-center items-center">
@@ -21,7 +19,7 @@ export default function Hero({children}: props) {
             Get CV
           </button>
         </div>
-      {children}
+        {children}
       </div>
     </section>
   );

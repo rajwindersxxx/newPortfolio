@@ -1,9 +1,4 @@
-import {
-  GitHubIcon,
-  LinkedInIcon,
-  LogoIcon,
-  MenuIcon,
-} from '../components/Icons';
+import { GitHubIcon, LinkedInIcon, LogoIcon, MenuIcon } from '../components/Icons';
 export default function Header() {
   return (
     <header className="text-teal-300 glassBackground border-b-[1px] fixed w-full top-0 z-50 ">
@@ -11,10 +6,7 @@ export default function Header() {
         <div className="flex gap-4 flex-col w-48">
           <a href="#" className="flex gap-4 items-center">
             <div className="rotateIcon">
-              <LogoIcon
-                className=" w-12 h-12 rotate-[45deg] stroke-teal-400"
-                storkWidth={65}
-              />
+              <LogoIcon className=" w-12 h-12 rotate-[45deg] stroke-teal-400" storkWidth={65} />
             </div>
             <h1 className="logo font-serif text-2xl">DevTiven</h1>
           </a>
@@ -22,19 +14,29 @@ export default function Header() {
         <div className="nav_links">
           <ul className="md:flex justify-center gap-8 hidden ">
             <li className="hover:text-teal-100 py-1 cursor-pointer transition-all">
-              <a className='p-2' href="#">Home</a>
+              <a className="p-2" href="#">
+                Home
+              </a>
             </li>
             <li className="hover:text-teal-100 py-1 cursor-pointer transition-all">
-              <a className='p-2' href="#about">About</a>
+              <a className="p-2" href="#about">
+                About
+              </a>
             </li>
             <li className="hover:text-teal-100 py-1 cursor-pointer transition-all">
-              <a className='p-2' href="#skills">Skills</a>
+              <a className="p-2" href="#skills">
+                Skills
+              </a>
             </li>
             <li className="hover:text-teal-100 py-1 cursor-pointer transition-all">
-              <a className='p-2' href="#projects">Projects</a>
+              <a className="p-2" href="#projects">
+                Projects
+              </a>
             </li>
             <li className="hover:text-teal-100 py-1 cursor-pointer transition-all">
-              <a className='p-2' href="#contact">Contact</a>
+              <a className="p-2" href="#contact">
+                Contact
+              </a>
             </li>
           </ul>
         </div>
