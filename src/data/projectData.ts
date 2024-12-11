@@ -1,4 +1,4 @@
-const projectsData = [
+export const projectsData = [
   {
     title: "NoteNest (make nots)",
     description:
