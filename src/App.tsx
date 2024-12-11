@@ -4,6 +4,7 @@ import Hero from './sections/Hero';
 import ParticleEffect from './components/ParticleEffect';
 import MovingIcons from './components/MovingIcons';
 import Skills from './sections/Skills';
+import Projects from './sections/Projects';
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
       </Hero>
       <About />
       <Skills />
+      <Projects/>
     </>
   );
 }

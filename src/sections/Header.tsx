@@ -1,12 +1,20 @@
-import { GitHubIcon, LinkedInIcon, LogoIcon, MenuIcon } from '../components/Icons';
+import {
+  GitHubIcon,
+  LinkedInIcon,
+  LogoIcon,
+  MenuIcon,
+} from "../components/Icons";
 export default function Header() {
   return (
     <header className="text-teal-300 glassBackground border-b-[1px] fixed w-full top-0 z-50 ">
-      <nav className="flex justify-between container py-4 m-auto items-center ">
+      <nav className="flex justify-between container py-4 px-4 m-auto items-center ">
         <div className="flex gap-4 flex-col w-48">
           <a href="#" className="flex gap-4 items-center">
             <div className="rotateIcon">
-              <LogoIcon className=" w-12 h-12 rotate-[45deg] stroke-teal-400" storkWidth={65} />
+              <LogoIcon
+                className=" w-12 h-12 rotate-[45deg] stroke-teal-400"
+                storkWidth={65}
+              />
             </div>
             <h1 className="logo font-serif text-2xl">DevTiven</h1>
           </a>

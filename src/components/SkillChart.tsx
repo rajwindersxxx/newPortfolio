@@ -1,6 +1,20 @@
-import { chartColors, chartData, chartLevels } from '../data/skillsData';
-import { BarChart, Bar, Cell, XAxis, YAxis, ResponsiveContainer } from 'recharts';
-import { CssIcon, HtmlIcon, JsIcon, NodejsIcon, ReactIcon, TailwindCssIcon } from './Icons';
+import { chartColors, chartData, chartLevels } from "../data/skillsData";
+import {
+  BarChart,
+  Bar,
+  Cell,
+  XAxis,
+  YAxis,
+  ResponsiveContainer,
+} from "recharts";
+import {
+  CssIcon,
+  HtmlIcon,
+  JsIcon,
+  NodejsIcon,
+  ReactIcon,
+  TailwindCssIcon,
+} from "./Icons";
 
 interface LabelProps {
   payload: {
@@ -24,40 +38,70 @@ const renderXAxisTick = ({ x, y, payload }: LabelProps) => {
   const iconSize = 45;
   function selectIcon() {
     switch (payload.value) {
-      case 'HTML':
+      case "HTML":
         return (
-          <svg x={x - xDistance} y={y - yDistance} width={iconSize} height={iconSize}>
+          <svg
+            x={x - xDistance}
+            y={y - yDistance}
+            width={iconSize}
+            height={iconSize}
+          >
             <HtmlIcon />
           </svg>
         );
 
-      case 'CSS':
+      case "CSS":
         return (
-          <svg x={x - xDistance} y={y - yDistance} width={iconSize} height={iconSize}>
+          <svg
+            x={x - xDistance}
+            y={y - yDistance}
+            width={iconSize}
+            height={iconSize}
+          >
             <CssIcon />
           </svg>
         );
-      case 'JavaScript':
+      case "JavaScript":
         return (
-          <svg x={x - xDistance} y={y - yDistance} width={iconSize} height={iconSize}>
+          <svg
+            x={x - xDistance}
+            y={y - yDistance}
+            width={iconSize}
+            height={iconSize}
+          >
             <JsIcon />
           </svg>
         );
-      case 'Tailwind':
+      case "Tailwind":
         return (
-          <svg x={x - xDistance} y={y - yDistance} width={iconSize} height={iconSize}>
+          <svg
+            x={x - xDistance}
+            y={y - yDistance}
+            width={iconSize}
+            height={iconSize}
+          >
             <TailwindCssIcon />
           </svg>
         );
-      case 'React':
+      case "React":
         return (
-          <svg x={x - xDistance} y={y - yDistance} width={iconSize} height={iconSize}>
+          <svg
+            x={x - xDistance}
+            y={y - yDistance}
+            width={iconSize}
+            height={iconSize}
+          >
             <ReactIcon />
           </svg>
         );
-      case 'Nodejs':
+      case "Nodejs":
         return (
-          <svg x={x - xDistance} y={y - yDistance} width={iconSize} height={iconSize}>
+          <svg
+            x={x - xDistance}
+            y={y - yDistance}
+            width={iconSize}
+            height={iconSize}
+          >
             <NodejsIcon />
           </svg>
         );
@@ -73,18 +117,38 @@ const renderYAxisTick = ({ x, y, index }: LabelProps) => {
   const yDistance = 10;
   function selectIcon() {
     return (
-      <text x={x + xDistance} y={y + yDistance} fill={`#fff`} className="fill-teal-400" textAnchor="start" dy={4}>
+      <text
+        x={x + xDistance}
+        y={y + yDistance}
+        fill={`#fff`}
+        className="fill-teal-400"
+        textAnchor="start"
+        dy={4}
+      >
         {chartLevels[index]}
       </text>
     );
   }
   return selectIcon();
 };
-const renderCustomBarLabel = ({ x, y, width, height, name, index }: LabelProps) => {
-  const barColor = chartColors[chartData[index].type] || '#fff';
+const renderCustomBarLabel = ({
+  x,
+  y,
+  width,
+  height,
+  name,
+  index,
+}: LabelProps) => {
+  const barColor = chartColors[chartData[index].type] || "#fff";
 
   return (
-    <text x={x + width + 10} y={y + height / 2} fill={barColor} textAnchor="start" dy={4}>
+    <text
+      x={x + width + 10}
+      y={y + height / 2}
+      fill={barColor}
+      textAnchor="start"
+      dy={4}
+    >
       {name}
     </text>
   );
@@ -92,7 +156,7 @@ const renderCustomBarLabel = ({ x, y, width, height, name, index }: LabelProps) 
 
 export default function SkillChart() {
   return (
-    <ResponsiveContainer width="95%" height={450}>
+    <ResponsiveContainer width="90%" height={450}>
       <BarChart
         data={chartData}
         layout="vertical"
@@ -105,7 +169,12 @@ export default function SkillChart() {
       >
         <XAxis type="number" tick={renderYAxisTick} />
         <YAxis type="category" dataKey="name" tick={renderXAxisTick} />
-        <Bar dataKey="percent" unit="%" barSize={35} label={renderCustomBarLabel}>
+        <Bar
+          dataKey="percent"
+          unit="%"
+          barSize={35}
+          label={renderCustomBarLabel}
+        >
           {chartData.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={chartColors[entry.type]} />
           ))}
