@@ -1,5 +1,5 @@
 import { CodeIcon, GlobIcon } from './Icons';
-import Tag from './tag';
+import Tag from './Tag';
 
 interface props {
   data: {
