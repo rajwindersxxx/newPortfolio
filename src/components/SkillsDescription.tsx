@@ -1,3 +1,5 @@
+import Tag from "./tag";
+
 interface props {
   data: {
     id: number;
@@ -19,12 +21,7 @@ export default function SkillsDescription({ data }: props) {
         <p className={`text-teal-400 mb-16`}>{data.description}</p>
         <div className="flex gap-2 flex-wrap ">
           {data.tags.map((tag) => (
-            <span
-              className="px-2 bg-backgroundColor border-[1px] border-teal-900 rounded-md text-sm"
-              key={crypto.randomUUID()}
-            >
-              #{tag}
-            </span>
+            <Tag tag={tag} />
           ))}
         </div>
       </div>

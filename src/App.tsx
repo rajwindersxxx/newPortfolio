@@ -5,17 +5,21 @@ import ParticleEffect from './components/ParticleEffect';
 import MovingIcons from './components/MovingIcons';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
+import Contact from './sections/Contact';
 function App() {
   return (
     <>
       <ParticleEffect />
       <Header />
-      <Hero>
-        <MovingIcons />
-      </Hero>
-      <About />
-      <Skills />
-      <Projects/>
+      <div className='flex flex-col gap-24'>
+        <Hero>
+          <MovingIcons />
+        </Hero>
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
     </>
   );
 }

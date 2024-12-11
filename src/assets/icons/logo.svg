@@ -1,0 +1,109 @@
+<svg
+      viewBox="0 0 2000 2000"
+      xmlns="http://www.w3.org/2000/svg"
+      fillRule="evenodd"
+      clipRule="evenodd"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeMiterlimit='1.5'
+      fill='#0d9488'
+    >
+      <path
+        d="M875.969 253.695l543.111 408.876-207.45 661.579H540.309l-207.45-661.579 543.11-408.876z"
+        fill="#0d9488"
+        strokeWidth='51px'
+        transform="matrix(1.75113 0 0 1.68996 -533.937 -371.886)"
+      />
+      <path
+        d="M875.969 253.695l543.111 408.876-207.45 661.579H540.309l-207.45-661.579 543.11-408.876z"
+        fill="#0d9488"
+        strokeWidth='51px'
+        transform="matrix(1.41629 0 0 1.36681 -240.626 -98.692)"
+      />
+      <path
+        d="M875.969 253.695l543.111 408.876-207.45 661.579H540.309l-207.45-661.579 543.11-408.876z"
+        fill="#0d9488"
+        strokeWidth='51px'
+        transform="matrix(1.41629 0 0 1.36681 -240.626 -98.692)"
+      />
+      <path
+        d="M230.799 806.919c358.441 143.349 205.936 131.394 673.366 75.664 230.325-27.46 462.495 53.61 462.495 53.61"
+        fill="#0d9488"
+        strokeWidth='102px'
+        transform="rotate(157.674 961.17 954.826)"
+      />
+      <path
+        d="M337.377 157.348c138.126 382.538 37.706 761.993 360.284 761.978 297.258-.014 147.3-2.53 147.3-2.53"
+        fill="#0d9488"
+        strokeWidth='102px'
+        transform="rotate(90.3 347.425 1154.843)"
+      />
+      <path
+        d="M230.799 806.919C565.891 932.3 543.155 1006.79 656.851 1006.79c113.695 0 180.552-7.829 198.82-5.55"
+        fill="#0d9488"
+        strokeWidth='102px'
+        transform="rotate(-177.94 859.426 1235.477)"
+      />
+      <path
+        d="M230.799 806.919c271.363 71.073 606.604 192.042 624.872 194.321"
+        fill="#0d9488"
+        strokeWidth='201px'
+        transform="matrix(-.1501 -.31962 .46786 -.21972 657.117 775.69)"
+      />
+      <path
+        d="M1000 524.623C888.889 637.726 750.646 731.341 750.646 731.341"
+        fill="#0d9488"
+        strokeWidth='102px'
+      />
+      <ellipse
+        cx={329.457}
+        cy={202.584}
+        rx={52.972}
+        ry={45.478}
+        fill="#0d9488"
+        strokeWidth='102px'
+        transform="translate(235.142 923.514)"
+      />
+      <ellipse
+        cx={329.457}
+        cy={202.584}
+        rx={52.972}
+        ry={45.478}
+        fill="#0d9488"
+        strokeWidth='102px'
+        transform="translate(392.765 552.013)"
+      />
+      <ellipse
+        cx={329.457}
+        cy={202.584}
+        rx={52.972}
+        ry={45.478}
+        fill="#0d9488"
+        strokeWidth='102px'
+        transform="translate(869.509 461.057)"
+      />
+      <ellipse
+        cx={329.457}
+        cy={202.584}
+        rx={52.972}
+        ry={45.478}
+        fill="#0d9488"
+        strokeWidth='102px'
+        transform="translate(1068.48 923.514)"
+      />
+      <ellipse
+        cx={329.457}
+        cy={202.584}
+        rx={52.972}
+        ry={45.478}
+        fill="#0d9488"
+        strokeWidth='102px'
+        transform="translate(462.532 1263.57)"
+      />
+      <path
+        d="M230.799 795.349c441.036 129.199 294.88 100.5 428.116 118.863 217.132 29.926 540.055-250.571 540.055-250.571"
+        fill="#0d9488"
+        strokeWidth='102px'
+        transform="translate(7.34 22.222)"
+      />
+    </svg>

@@ -118,11 +118,11 @@ const renderYAxisTick = ({ x, y, index }: LabelProps) => {
   function selectIcon() {
     return (
       <text
-        x={x + xDistance}
+        x={x + xDistance -8}
         y={y + yDistance}
         fill={`#fff`}
         className="fill-teal-400"
-        textAnchor="start"
+        textAnchor="center"
         dy={4}
       >
         {chartLevels[index]}
@@ -156,7 +156,7 @@ const renderCustomBarLabel = ({
 
 export default function SkillChart() {
   return (
-    <ResponsiveContainer width="90%" height={450}>
+    <ResponsiveContainer width="100%" height={450}>
       <BarChart
         data={chartData}
         layout="vertical"

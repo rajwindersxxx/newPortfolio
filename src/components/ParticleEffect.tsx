@@ -26,15 +26,15 @@ export default function ParticleEffect() {
           value: '#0f172a',
         },
       },
-      fpsLimit: 120,
+      fpsLimit: 24,
       interactivity: {
         events: {
           onClick: {
-            enable: true,
+            enable: false,
             mode: 'push',
           },
           onHover: {
-            enable: true,
+            enable: false,
             mode: 'repulse',
           },
         },

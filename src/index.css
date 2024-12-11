@@ -2,15 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  @apply bg-backgroundColor;
+  @apply bg-backgroundColor scroll-smooth;
 }
-
+html {
+  @apply scroll-smooth;
+}
 
 .glassBackground {
   @apply  border-secondaryColor bg-gradient-to-l from-backgroundColor/75 via-backgroundColor/75 to-PrimaryColor/75 backdrop-blur-md;
 }
 
 .rotateIcon{
+  will-change: transform;
   transition: all 0.3s;
   animation: rotation 40s linear infinite;
 }
@@ -22,5 +25,31 @@ body {
   to{
     transform: rotate(-360deg);
 
+  }
+}
+.moveIcons {
+  transition: all 0.3s;
+  animation: moveIcons 5s linear infinite;
+}
+@keyframes moveIcons {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.rotatingGradient {
+  animation: rotateGradient 5s linear infinite;
+}
+@keyframes rotateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
