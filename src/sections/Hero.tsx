@@ -21,6 +21,7 @@ export default function Hero() {
           <a
             href="https://drive.google.com/file/d/14ra0zwh9c4dGpclhcnEcMaCQ2odDu94B/view"
             target="_blank"
+            rel='noopener'
           >
             <SecondaryButton>Get CV</SecondaryButton>
           </a>
