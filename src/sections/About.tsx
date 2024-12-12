@@ -11,7 +11,7 @@ export default function About() {
           />
         </div>
         <h2 className="text-teal-200 text-5xl text-center">I’m Rajwinder</h2>
-        <p className="text-teal-300 text-2xl text-center p-4">
+        <p className="text-teal-300 text-xl text-center p-4">
           A passionate programmer and web developer who began coding at 23
           during college. My love for creating impactful digital experiences
           drives my dream of becoming a recognized programmer, developing
