@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer_block">
-        <p className="footer_copyright">
-          &copy; <span className="year">2023</span> Rajwinder Singh. All rights reserved.
+    <footer className="text-teal-300 glassBackground border-t-[1px]  w-full  z-50 p-4">
+      <div className="flex justify-between container flex-col py-4 px-4 m-auto items-center gap-4">
+        <p className="">
+          &copy; <span className="year"></span> Rajwinder Singh. All rights reserved.
         </p>
-        <div className="footer_links">
+        <div className="flex gap-4">
           <a href="https://www.linkedin.com/in/rajwinder-singh-93651b218/" target="_blank" rel="noopener">
             [LinkedIn]
           </a>

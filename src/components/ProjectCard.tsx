@@ -27,7 +27,7 @@ export default function ProjectCard({ data }: props) {
         <div className="flex justify-between items-center">
           <div className='flex gap-2 flex-wrap'>
             {toolsUsed.map((type) => (
-              <Tag tag={type} />
+              <Tag tag={type} key={crypto.randomUUID()}/>
             ))}
           </div>
           <div className="flex  gap-2 items-center">

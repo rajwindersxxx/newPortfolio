@@ -74,10 +74,10 @@ export const chartColors = [
   "#d0f400",
 ];
 export const chartData = [
-  { name: "HTML", percent: 65, type: 1 },
-  { name: "CSS", percent: 60, type: 2 },
-  { name: "JavaScript", percent: 50, type: 3 },
-  { name: "Tailwind", percent: 40, type: 5 },
+  { name: "HTML", percent: 90, type: 1 },
+  { name: "CSS", percent: 70, type: 2 },
+  { name: "JavaScript", percent: 62, type: 3 },
+  { name: "Tailwind", percent: 50, type: 5 },
   { name: "React", percent: 36, type: 4 },
   { name: "Nodejs", percent: 24, type: 7 },
 ];

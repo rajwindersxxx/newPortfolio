@@ -7,7 +7,9 @@ body {
 html {
   @apply scroll-smooth;
 }
-
+a {
+  @apply hover:text-teal-200 text-teal-400 transition-all;
+}
 .glassBackground {
   @apply  border-secondaryColor bg-gradient-to-l from-backgroundColor/75 via-backgroundColor/75 to-PrimaryColor/75 backdrop-blur-md;
 }
@@ -17,6 +19,7 @@ html {
   transition: all 0.3s;
   animation: rotation 40s linear infinite;
 }
+
 
 @keyframes rotation {
   from  {
