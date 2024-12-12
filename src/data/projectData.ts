@@ -1,12 +1,14 @@
 export const projectsData = [
   {
     title: "NoteNest (make nots)",
-    toolsUsed: ['html', 'scss', 'js', 'nodejs', 'leaflet'],
+    toolsUsed: ['html', 'css', 'js', 'ejs'],
     description:
       "Created entirely by me, this book review app allows users to share their thoughts and summaries using EJS templates and Passport for secure OAuth authentication.",
     demoLink: "https://notenest.tiven.xyz/",
-    gitHubLink: "https://github.com/rajwindersxxx/notebook-Site",
+    gitHubLink: "https://github.com/rajwindersxxx/notenest",
     img: "projectsImgs/notenest.png",
+    type: "backend",
+    
   },
   {
     title: "Mapty Workout Tracker",
@@ -14,43 +16,41 @@ export const projectsData = [
     description:
         "This workout tracker, developed as part of a course challenge, uses HTML, SCSS, and JavaScript. I added features like local storage, weather integration, error handling, api calls and editing options to enhance functionality.",
     demoLink: "https://mapty.tiven.xyz/",   
-    gitHubLink: "https://github.com/rajwindersxxx/maptyChallange",
+    gitHubLink: "https://github.com/rajwindersxxx/mapty",
     img: "projectsImgs/mapty.png",
+    type: "frontend",
+
   },
   {
     title: "Employee management",
-    toolsUsed: ['html', 'css', 'js', 'php', 'css', 'js', 'php'],
+    toolsUsed: ['html', 'css', 'js', 'php'],
     description:
         "Fully developed by me, this PHP-based application manages employee records. It incorporates HTML, CSS, JavaScript, and Bootstrap for a responsive design.",
-    demoLink: "https://notenest.tiven.xyz/",
+    demoLink: "https://notenset.tiven.xyz/",
     gitHubLink: "https://github.com/rajwindersxxx/employeemanagement",
     img: "projectsImgs/erms.png",
+    type: "backend",
   },
   {
-    title: "NoteNest (make nots)",
-    toolsUsed: ['html', 'scss', 'js', 'nodejs', 'leaflet'],
+    title: " To Do List",
+    toolsUsed: ['React', 'tailwindCss', 'motion'],
     description:
       "Created entirely by me, this book review app allows users to share their thoughts and summaries using EJS templates and Passport for secure OAuth authentication.",
-    demoLink: "https://notenest.tiven.xyz/",
-    gitHubLink: "https://github.com/rajwindersxxx/notebook-Site",
-    img: "projectsImgs/notenest.png",
+    demoLink: "https://toDoList.tiven.xyz/",
+    gitHubLink: "https://github.com/rajwindersxxx/toDoList",
+    img: "projectsImgs/toDoList.png",
+    type: "frontend",
+
   },
   {
-    title: "Mapty Workout Tracker",
-    toolsUsed: ['html', 'scss', 'js', 'leaflet'],
+    title: " Expense Tracker",
+    toolsUsed: ['React', 'tailwindCss', 'recharts'],
     description:
         "This workout tracker, developed as part of a course challenge, uses HTML, SCSS, and JavaScript. I added features like local storage, weather integration, error handling, api calls and editing options to enhance functionality.",
-    demoLink: "https://mapty.tiven.xyz/",   
-    gitHubLink: "https://github.com/rajwindersxxx/maptyChallange",
-    img: "projectsImgs/mapty.png",
-  },
-  {
-    title: "Employee management",
-    toolsUsed: ['html', 'css', 'js', 'php', 'css', 'js', 'php'],
-    description:
-        "Fully developed by me, this PHP-based application manages employee records. It incorporates HTML, CSS, JavaScript, and Bootstrap for a responsive design.",
-    demoLink: "https://notenest.tiven.xyz/",
-    gitHubLink: "https://github.com/rajwindersxxx/employeemanagement",
-    img: "projectsImgs/erms.png",
+    demoLink: "https://expenseTracker.tiven.xyz/",   
+    gitHubLink: "https://github.com/rajwindersxxx/expenseTracker",
+    img: "projectsImgs/expenseTracker.png",
+    type: "backend",
+
   }
 ];

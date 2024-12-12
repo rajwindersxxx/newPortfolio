@@ -2,7 +2,7 @@ import ContactForm from '../components/ContactForm';
 
 export default function Contact() {
   return (
-    <section id="contact" className="text-teal-400 border-y-[1px] border-secondaryColor p-4 h-screen flex justify-center items-center">
+    <section id="contact" className="text-teal-400 p-4 h-screen flex justify-center items-center">
       <div className="container mx-auto flex flex-col gap-8 ">
         <h2 className="text-center text-teal-200  text-4xl ">
           Get in touch

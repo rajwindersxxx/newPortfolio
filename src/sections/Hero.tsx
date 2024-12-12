@@ -15,10 +15,13 @@ export default function Hero() {
           </h3>
         </div>
         <div className="flex gap-4 justify-center mb-24">
-          <a href="#" target="_blank">
+          <a href="#contact">
             <PrimaryButton>Hire me</PrimaryButton>
           </a>
-          <a href="#" target="_blank">
+          <a
+            href="https://drive.google.com/file/d/14ra0zwh9c4dGpclhcnEcMaCQ2odDu94B/view"
+            target="_blank"
+          >
             <SecondaryButton>Get CV</SecondaryButton>
           </a>
         </div>
