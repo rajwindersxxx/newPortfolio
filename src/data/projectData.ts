@@ -32,10 +32,10 @@ export const projectsData = [
     type: "backend",
   },
   {
-    title: " To Do List",
+    title: "To Do List",
     toolsUsed: ['React', 'tailwindCss', 'motion'],
     description:
-      "Created entirely by me, this book review app allows users to share their thoughts and summaries using EJS templates and Passport for secure OAuth authentication.",
+      "A sleek and interactive Todo List application built using React, styled with Tailwind CSS, and enhanced with Framer Motion for smooth animations. Users can easily add, edit, and delete tasks",
     demoLink: "https://toDoList.tiven.xyz/",
     gitHubLink: "https://github.com/rajwindersxxx/toDoList",
     img: "projectsImgs/toDoList.png",
@@ -43,10 +43,10 @@ export const projectsData = [
 
   },
   {
-    title: " Expense Tracker",
+    title: "Expense Tracker",
     toolsUsed: ['React', 'tailwindCss', 'recharts'],
     description:
-        "This workout tracker, developed as part of a course challenge, uses HTML, SCSS, and JavaScript. I added features like local storage, weather integration, error handling, api calls and editing options to enhance functionality.",
+        "A simple expense tracker built with React and Recharts, allowing users to easily add, delete, and filter expenses. The app visualizes expense data with an interactive pie chart, providing clear insights into spending habits.",
     demoLink: "https://expenseTracker.tiven.xyz/",   
     gitHubLink: "https://github.com/rajwindersxxx/expenseTracker",
     img: "projectsImgs/expenseTracker.png",
