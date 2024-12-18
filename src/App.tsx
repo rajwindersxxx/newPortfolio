@@ -11,12 +11,12 @@ function App() {
     <>
       <ParticleEffect />
       <Header />
-        <Hero/>
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer/>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   );
 }

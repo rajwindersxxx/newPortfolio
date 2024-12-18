@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         PrimaryColor: '#00191b',
-        backgroundColor: '#0f172a',
+        backgroundColor: '#0F172A',
         secondaryColor: '#3f4555',
         'tealLight-1': '#0FA4AF',
         'tealLight-2': '#AFDDE5',
