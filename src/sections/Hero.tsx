@@ -19,7 +19,7 @@ export default function Hero() {
             <PrimaryButton>Hire me</PrimaryButton>
           </a>
           <a
-            href="https://drive.google.com/file/d/14ra0zwh9c4dGpclhcnEcMaCQ2odDu94B/view"
+            href="https://onedrive.live.com/edit?id=F222A8BFC7A351FC!59384&resid=F222A8BFC7A351FC!59384&ithint=file%2cdocx&authkey=!AP94SocnTBgtRos&wdo=2&cid=f222a8bfc7a351fc"
             target="_blank"
             rel='noopener'
           >
