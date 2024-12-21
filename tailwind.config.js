@@ -11,6 +11,9 @@ export default {
         'tealLight-2': '#AFDDE5',
         other: ' #964734',
       },
+      gridTemplateColumns: {
+        'project': 'repeat(auto-fit , minmax(360px , 1fr))',
+      }
     },
   },
   plugins: [],

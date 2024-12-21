@@ -15,8 +15,8 @@ export default function ProjectCard({ data }: props) {
   const { title, description, demoLink, gitHubLink, img, toolsUsed } = data;
 
   return (
-    <div className="p-1 rounded-md bg-gradient-to-br from-teal-900  to-teal-500 max-w-[26rem] ">
-      <div className="flex flex-col justify-between gap-4 p-4 bg-backgroundColor h-full ">
+    <div className="p-1 rounded-md bg-gradient-to-br from-teal-900/75  to-teal-500/75 max-w-[26rem] ">
+      <div className="flex flex-col justify-between gap-4 p-4 bg-backgroundColor/95 h-full ">
         <div className='flex flex-col gap-4'>
           <div className="rounded-t-sm overflow-hidden">
             <img className="lazy" src={img} alt="employee management project" />

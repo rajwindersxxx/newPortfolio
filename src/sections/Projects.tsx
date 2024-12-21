@@ -11,7 +11,7 @@ export default function Projects() {
             Explore some of my projects
           </h2>
         </div>
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 justify-items-center">
+        <div className="grid grid-cols-project gap-8 justify-items-center">
           {projectsData.map(data => <ProjectCard data={data} key={crypto.randomUUID()}/>)}
         </div>
       </div>
