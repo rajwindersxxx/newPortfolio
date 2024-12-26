@@ -1,0 +1,49 @@
+[
+    {
+      "title": "Frontend skills",
+      "description": "with expertise in HTML5, CSS3, and JavaScript (ES6+), bringing ideas to life on the web. Skilled in utilizing popular frameworks like jQuery and React for dynamic, interactive experiences, and adept with responsive design through Tailwind CSS and Bootstrap to ensure visually appealing layouts across devices. and have explored creative tools like Figma and Affinity Design",
+      "tags": [
+        "html5",
+        "css3",
+        "javascript",
+        "tailwindCss",
+        "react",
+        "netlify",
+        "affinityDesign",
+        "motion",
+        "rechart"
+      ],
+      "img": "./img/computer.gif",
+      "id": 1
+    },
+    {
+      "title": "Backend skills",
+      "description": "server-side development with PHP, MySQL, and PostgreSQL, enabling robust data management and efficient database interactions. Skilled in building scalable, secure APIs with Node.js and Express, providing seamless backend support for web applications.",
+      "tags": [
+        "nodejs",
+        "mySql",
+        "postgresql",
+        "apache",
+        "aws",
+        "cloudflare",
+        "express"
+      ],
+      "img": "./img/backend.gif",
+      "id": 2
+    },
+    {
+      "title": "Other skills",
+      "description": "Familiar with essential development tools and environments, including Git and GitHub for version control, and Visual Studio Code for efficient code editing. Experienced with npm , debian linux and Apache server. Additionally, I have foundational knowledge in Web3, Motoko as well as libraries like Leaflet for map integration. Familiar with AI tools like ChatGPT and GitHub Copilot for coding assistance and enhancing productivity",
+      "tags": [
+        "git",
+        "vscode",
+        "gitHub",
+        "aws",
+        "cloudflare",
+        "msOffice",
+        "chatGpt"
+      ],
+      "img": "./img/skills.gif",
+      "id": 3
+    }
+]

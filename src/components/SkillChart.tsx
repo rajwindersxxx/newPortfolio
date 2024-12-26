@@ -1,4 +1,6 @@
-import { chartColors, chartData, chartLevels } from "../data/skillsData";
+// import { chartColors, chartData, chartLevels } from "../data/skillsData";
+import chartData from "../data/chartData.json";
+console.log(chartData); 
 import {
   BarChart,
   Bar,
@@ -125,7 +127,7 @@ const renderYAxisTick = ({ x, y, index }: LabelProps) => {
         textAnchor="center"
         dy={4}
       >
-        {chartLevels[index]}
+        {chartData.levels[index]}
       </text>
     );
   }
@@ -139,7 +141,7 @@ const renderCustomBarLabel = ({
   name,
   index,
 }: LabelProps) => {
-  const barColor = chartColors[chartData[index].type] || "#fff";
+  const barColor = chartData.colors[chartData.skills[index].type] || "#fff";
 
   return (
     <text
@@ -158,7 +160,7 @@ export default function SkillChart() {
   return (
     <ResponsiveContainer width="100%" height={450}>
       <BarChart
-        data={chartData}
+        data={chartData.skills}
         layout="vertical"
         margin={{
           top: 5,
@@ -175,8 +177,8 @@ export default function SkillChart() {
           barSize={35}
           label={renderCustomBarLabel}
         >
-          {chartData.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={chartColors[entry.type]} />
+          {chartData.skills.map((entry, index) => (
+            <Cell key={`cell-${index}`} fill={chartData.colors[entry.type]} />
           ))}
         </Bar>
       </BarChart>

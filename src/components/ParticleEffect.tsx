@@ -40,7 +40,7 @@ export default function ParticleEffect() {
         },
         modes: {
           push: {
-            quantity: 8,
+            quantity: 4,
           },
           repulse: {
             distance: 50,
@@ -73,7 +73,7 @@ export default function ParticleEffect() {
           density: {
             enable: true,
           },
-          value: 150,
+          value: 60,
         },
         opacity: {
           value: 0.4,

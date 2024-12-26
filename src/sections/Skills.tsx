@@ -1,6 +1,6 @@
 import BestSkills from '../components/BestSkills';
 import SkillsDescription from '../components/SkillsDescription';
-import { skillsData } from '../data/skillsData.ts';
+import  skillsData  from '../data/skillsData.json';
 export default function Skills() {
   return (
     <section

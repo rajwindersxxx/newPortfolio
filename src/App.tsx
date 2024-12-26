@@ -1,22 +1,27 @@
-import About from './sections/About';
-import Header from './sections/Header';
-import Hero from './sections/Hero';
-import ParticleEffect from './components/ParticleEffect';
-import Skills from './sections/Skills';
-import Projects from './sections/Projects';
-import Contact from './sections/Contact';
-import Footer from './sections/Footer';
+import { lazy, Suspense } from 'react';
+import LoadingSpinner from './components/LoadingSpinner';
+
+const About = lazy(() => import('./sections/About'));
+const Header = lazy(() => import('./sections/Header'));
+const Hero = lazy(() => import('./sections/Hero'));
+const ParticleEffect = lazy(() => import('./components/ParticleEffect'));
+const Skills = lazy(() => import('./sections/Skills'));
+const Projects = lazy(() => import('./sections/Projects'));
+const Contact = lazy(() => import('./sections/Contact'));
+const Footer = lazy(() => import('./sections/Footer'));
 function App() {
   return (
     <>
-      <ParticleEffect />
-      <Header />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+      <Suspense fallback={<LoadingSpinner />}>
+        <ParticleEffect />
+        <Header />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Contact />
+        <Footer />
+      </Suspense>
     </>
   );
 }
