@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import LoadingSpinner from './components/LoadingSpinner';
+import { useGSAP } from '@gsap/react';
 
 const About = lazy(() => import('./sections/About'));
 const Header = lazy(() => import('./sections/Header'));
@@ -10,6 +11,9 @@ const Projects = lazy(() => import('./sections/Projects'));
 const Contact = lazy(() => import('./sections/Contact'));
 const Footer = lazy(() => import('./sections/Footer'));
 function App() {
+  useGSAP(() => {
+    
+  })
   return (
     <>
       <Suspense fallback={<LoadingSpinner />}>

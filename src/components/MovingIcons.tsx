@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { AnimatePresence, motion } from 'motion/react';
+import { motion } from 'motion/react';
 import {
   CssIcon,
   GitHubIcon,
@@ -42,13 +42,16 @@ function MovingIcons() {
   return (
     <div className="glassBackground container max-w-screen-md h-26 rounded-lg overflow-hidden border-[1px]">
       <div className="flex justify-center flex-row gap-16 p-8 overflow-hidden">
-        <AnimatePresence initial={true} mode="popLayout">
-          {icons.map((item) => (
-            <motion.div key={crypto.randomUUID()} layout initial={{ x: 0 }} animate={{ x: -100 }}>
-              {item}
-            </motion.div>
-          ))}
-        </AnimatePresence>
+        {icons.map((item) => (
+          <motion.div
+            key={crypto.randomUUID()}
+            layout
+            initial={{ x: 0 }}
+            animate={{ x: -100 }}
+          >
+            {item}
+          </motion.div>
+        ))}
       </div>
     </div>
   );
