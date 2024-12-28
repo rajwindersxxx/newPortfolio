@@ -14,7 +14,7 @@ a {
   @apply  border-secondaryColor bg-gradient-to-l from-backgroundColor/75 via-backgroundColor/75 to-PrimaryColor/75 backdrop-blur-md;
 }
 
-.rotateIcon{
+/* .rotateIcon{
   will-change: transform;
   transition: all 0.3s;
   animation: rotation 40s linear infinite;
@@ -29,7 +29,7 @@ a {
     transform: rotate(-360deg);
 
   }
-}
+} */
 .moveIcons {
   transition: all 0.3s;
   animation: moveIcons 5s linear infinite;

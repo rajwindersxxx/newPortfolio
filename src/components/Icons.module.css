@@ -1,0 +1,7 @@
+/* some other css used by icons  */
+.vsIconMask {
+    maskType: 'alpha'
+}
+.vsIconPath{
+    mixBlendMode: 'overlay'
+}
