@@ -1,6 +1,6 @@
 import { CodeIcon, GlobIcon } from './Icons';
 import Tag from './Tag';
-
+import { v4 as uuidv4 } from 'uuid';
 interface props {
   data: {
     title: string;
@@ -27,7 +27,7 @@ export default function ProjectCard({ data }: props) {
         <div className="flex justify-between items-center">
           <div className='flex gap-2 flex-wrap'>
             {toolsUsed.map((type) => (
-              <Tag tag={type} key={crypto.randomUUID()}/>
+              <Tag tag={type} key={uuidv4()}/>
             ))}
           </div>
           <div className="flex  gap-2 items-center">

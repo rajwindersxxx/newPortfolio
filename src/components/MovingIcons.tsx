@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
+import { v4 as uuidv4 } from 'uuid';
 import {
   CssIcon,
   GitHubIcon,
@@ -44,7 +45,7 @@ function MovingIcons() {
       <div className="flex justify-center flex-row gap-16 p-8 overflow-hidden">
         {icons.map((item) => (
           <motion.div
-            key={crypto.randomUUID()}
+            key={uuidv4()}
             layout
             initial={{ x: 0 }}
             animate={{ x: -100 }}

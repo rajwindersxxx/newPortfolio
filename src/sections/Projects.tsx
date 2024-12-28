@@ -1,8 +1,7 @@
 import ProjectCard from '../components/ProjectCard';
-import  projectsData from '../data/projectData.json';
-
+import projectsData from '../data/projectData.json';
+import { v4 as uuidv4 } from 'uuid';
 export default function Projects() {
-
   return (
     <section id="projects" className="w-full text-teal-200 min-h-screen pt-24">
       <div className="container border m-auto border-secondaryColor pb-4 p-4">
@@ -12,7 +11,9 @@ export default function Projects() {
           </h2>
         </div>
         <div className="grid grid-cols-project gap-8 justify-items-center">
-          {projectsData.map(data => <ProjectCard data={data} key={crypto.randomUUID()}/>)}
+          {projectsData.map((data) => (
+            <ProjectCard data={data} key={uuidv4()} />
+          ))}
         </div>
       </div>
     </section>

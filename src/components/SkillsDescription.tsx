@@ -1,5 +1,5 @@
 import Tag from "./Tag";
-
+import { v4 as uuidv4 } from 'uuid';
 interface props {
   data: {
     id: number;
@@ -21,7 +21,7 @@ export default function SkillsDescription({ data }: props) {
         <p className={`text-teal-400 mb-16`}>{data.description}</p>
         <div className="flex gap-2 flex-wrap ">
           {data.tags.map((tag) => (
-            <Tag tag={tag} key={crypto.randomUUID()}/>
+            <Tag tag={tag} key={uuidv4()}/>
           ))}
         </div>
       </div>
