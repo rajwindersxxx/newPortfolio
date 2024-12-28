@@ -1,6 +1,5 @@
-// import { chartColors, chartData, chartLevels } from "../data/skillsData";
+
 import chartData from "../data/chartData.json";
-console.log(chartData); 
 import {
   BarChart,
   Bar,
