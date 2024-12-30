@@ -1,5 +1,3 @@
 export default function NavRight() {
-  return (
-    <div>NavRight</div>
-  )
+  return <div>NavRight</div>;
 }

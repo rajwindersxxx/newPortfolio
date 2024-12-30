@@ -5,7 +5,7 @@ interface props {
 export default function Tag({ tag }: props) {
   return (
     <span
-      className="px-2 bg-backgroundColor border-[1px] border-teal-900 rounded-md text-sm"
+      className="rounded-md border-[1px] border-teal-900 bg-backgroundColor px-2 text-sm"
       key={uuidv4()}
     >
       #{tag}

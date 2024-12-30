@@ -1,4 +1,4 @@
-import style from './Icons.module.css';
+
 export interface propsType {
   className?: string;
   storkWidth?: number;
@@ -699,8 +699,6 @@ export function VSCodeIcon({ className }: propsType) {
         x={0}
         y={0}
         maskUnits="userSpaceOnUse"
-        className={style.vsIconPath}
-      
       >
         <path
           fill="#fff"
@@ -732,8 +730,6 @@ export function VSCodeIcon({ className }: propsType) {
           d="M90.69 127.126a7.968 7.968 0 006.349-.244l26.353-12.681a8 8 0 004.53-7.21V21.009a8 8 0 00-4.53-7.21L97.039 1.12a7.97 7.97 0 00-9.093 1.548l-50.45 46.026-21.974-16.68a5.328 5.328 0 00-6.807.302l-7.048 6.411a5.336 5.336 0 00-.006 7.888L20.718 64 1.662 81.386a5.335 5.335 0 00.006 7.888l7.048 6.411a5.328 5.328 0 006.807.303l21.975-16.681 50.45 46.026a7.959 7.959 0 002.742 1.793zm5.252-92.184L57.662 64l38.28 29.057V34.943z"
           clipRule="evenodd"
           opacity={0.25}
-          className={style.vsIconPath}
-  
         />
       </g>
       <defs>

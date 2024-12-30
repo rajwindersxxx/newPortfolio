@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/all';
 interface props {
   children: React.ReactNode;
 }
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 export function HeaderAnimations({ children }: props) {
   useGSAP(() => {
     const tl = gsap.timeline();
@@ -14,7 +14,7 @@ export function HeaderAnimations({ children }: props) {
     tl.from(
       '.rotateIcon',
       { opacity: 0, scale: 0, rotate: -180, xPercent: -200 },
-      '<'
+      '<',
     );
     tl.from('.logo span', { opacity: 0, xPercent: -100, ease: 'none' }, '<');
     tl.from('.rotateIcon', {
@@ -29,21 +29,19 @@ export function HeaderAnimations({ children }: props) {
 
 export function HeroAnimations({ children }: props) {
   useGSAP(() => {
-    const tl  = gsap.timeline();
-    tl.from('.movingIcons', {height: 0, width: 0, duration: 1}, '<');
-    const tl2  = gsap.timeline({
+    const tl = gsap.timeline();
+    tl.from('.movingIcons', { height: 0, width: 0, duration: 1 }, '<');
+    const tl2 = gsap.timeline({
       scrollTrigger: {
-        
         trigger: '.movingIcons',
         start: 'top 60%',
-        end: "max",
-        markers: true,
+        end: 'max',
         scrub: 0,
-      }
+      },
     });
     tl2.to('.hero-section h2', {
-       yPercent: -100,
-    })
+      yPercent: -100,
+    });
   });
   return <>{children}</>;
 }

@@ -14,22 +14,7 @@ a {
   @apply  border-secondaryColor bg-gradient-to-l from-backgroundColor/75 via-backgroundColor/75 to-PrimaryColor/75 backdrop-blur-md;
 }
 
-/* .rotateIcon{
-  will-change: transform;
-  transition: all 0.3s;
-  animation: rotation 40s linear infinite;
-}
 
-
-@keyframes rotation {
-  from  {
-    transform: rotate(0deg);
-  }
-  to{
-    transform: rotate(-360deg);
-
-  }
-} */
 .moveIcons {
   transition: all 0.3s;
   animation: moveIcons 5s linear infinite;
@@ -42,9 +27,7 @@ a {
     transform: translateX(-100%);
   }
 }
-.rotatingGradient {
-  animation: rotateGradient 5s linear infinite;
-}
+
 @keyframes rotateGradient {
   0% {
     background-position: 0% 50%;
@@ -55,4 +38,29 @@ a {
   100% {
     background-position: 0% 50%;
   }
+}
+
+/* css loader  */
+
+.loader {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.loader:before , .loader:after{
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 10px 2px rgba(#f0fdfa, 0.3) inset;
+}
+.loader:after {
+  box-shadow: 0 2px 0 #2dd4bf inset;
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  0% {  transform: rotate(0)}
+  100% { transform: rotate(360deg)}
 }

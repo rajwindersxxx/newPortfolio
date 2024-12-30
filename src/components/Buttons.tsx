@@ -8,7 +8,7 @@ export function PrimaryButton({ children, onClick, className }: props) {
     <button
       onClick={onClick}
       type="button"
-      className={`bg-teal-700 text-teal-200  min-w-24 min-h-12 rounded hover:bg-teal-800 transition-all cursor-pointer flex items-center justify-center ${className}`}
+      className={`flex min-h-12 min-w-24 cursor-pointer items-center justify-center rounded bg-teal-700 text-teal-200 transition-all hover:bg-teal-800 ${className}`}
     >
       {children}
     </button>
@@ -19,7 +19,7 @@ export function SecondaryButton({ children, onClick, className }: props) {
     <button
       onClick={onClick}
       type="button"
-      className={`bg-backgroundColor/50 border-2 border-teal-700 text-teal-200  min-w-24 min-h-12 rounded hover:bg-teal-800 transition-all cursor-pointer flex items-center justify-center ${className}`}
+      className={`flex min-h-12 min-w-24 cursor-pointer items-center justify-center rounded border-2 border-teal-700 bg-backgroundColor/50 text-teal-200 transition-all hover:bg-teal-800 ${className}`}
     >
       {children}
     </button>

@@ -89,12 +89,12 @@ export default function ParticleEffect() {
       },
       detectRetina: true,
     }),
-    []
+    [],
   );
 
   if (init) {
     return (
-      <div className="fixed w-full h-full -z-10">
+      <div className="fixed -z-10 h-full w-full">
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}

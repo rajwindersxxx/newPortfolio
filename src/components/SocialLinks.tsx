@@ -2,7 +2,7 @@ import { GitHubIcon, LinkedInIcon } from './Icons';
 
 export default function SocialLinks() {
   return (
-    <ul className="flex gap-4 justify-end  px-4 lg:w-48">
+    <ul className="flex justify-end gap-4 px-4 lg:w-48">
       <li>
         <a
           href="https://github.com/rajwindersxxx"
@@ -10,7 +10,7 @@ export default function SocialLinks() {
           target="_blank"
           rel="noopener"
         >
-          <GitHubIcon className="fill-teal-200  hover:fill-teal-100 w-6 h-6" />
+          <GitHubIcon className="h-6 w-6 fill-teal-200 hover:fill-teal-100" />
         </a>
       </li>
       <li>
@@ -20,7 +20,7 @@ export default function SocialLinks() {
           target="_blank"
           rel="noopener"
         >
-          <LinkedInIcon className="fill-teal-200 hover:fill-teal-100 w-6 h-6" />
+          <LinkedInIcon className="h-6 w-6 fill-teal-200 hover:fill-teal-100" />
         </a>
       </li>
     </ul>

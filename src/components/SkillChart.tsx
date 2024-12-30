@@ -1,5 +1,4 @@
-
-import chartData from "../data/chartData.json";
+import chartData from '../data/chartData.json';
 import {
   BarChart,
   Bar,
@@ -7,7 +6,7 @@ import {
   XAxis,
   YAxis,
   ResponsiveContainer,
-} from "recharts";
+} from 'recharts';
 import {
   CssIcon,
   HtmlIcon,
@@ -15,7 +14,7 @@ import {
   NodejsIcon,
   ReactIcon,
   TailwindCssIcon,
-} from "./Icons";
+} from './Icons';
 
 interface LabelProps {
   payload: {
@@ -39,7 +38,7 @@ const renderXAxisTick = ({ x, y, payload }: LabelProps) => {
   const iconSize = 45;
   function selectIcon() {
     switch (payload.value) {
-      case "HTML":
+      case 'HTML':
         return (
           <svg
             x={x - xDistance}
@@ -51,7 +50,7 @@ const renderXAxisTick = ({ x, y, payload }: LabelProps) => {
           </svg>
         );
 
-      case "CSS":
+      case 'CSS':
         return (
           <svg
             x={x - xDistance}
@@ -62,7 +61,7 @@ const renderXAxisTick = ({ x, y, payload }: LabelProps) => {
             <CssIcon />
           </svg>
         );
-      case "JavaScript":
+      case 'JavaScript':
         return (
           <svg
             x={x - xDistance}
@@ -73,7 +72,7 @@ const renderXAxisTick = ({ x, y, payload }: LabelProps) => {
             <JsIcon />
           </svg>
         );
-      case "Tailwind":
+      case 'Tailwind':
         return (
           <svg
             x={x - xDistance}
@@ -84,7 +83,7 @@ const renderXAxisTick = ({ x, y, payload }: LabelProps) => {
             <TailwindCssIcon />
           </svg>
         );
-      case "React":
+      case 'React':
         return (
           <svg
             x={x - xDistance}
@@ -95,7 +94,7 @@ const renderXAxisTick = ({ x, y, payload }: LabelProps) => {
             <ReactIcon />
           </svg>
         );
-      case "Nodejs":
+      case 'Nodejs':
         return (
           <svg
             x={x - xDistance}
@@ -119,7 +118,7 @@ const renderYAxisTick = ({ x, y, index }: LabelProps) => {
   function selectIcon() {
     return (
       <text
-        x={x + xDistance -8}
+        x={x + xDistance - 8}
         y={y + yDistance}
         fill={`#fff`}
         className="fill-teal-400"
@@ -140,7 +139,7 @@ const renderCustomBarLabel = ({
   name,
   index,
 }: LabelProps) => {
-  const barColor = chartData.colors[chartData.skills[index].type] || "#fff";
+  const barColor = chartData.colors[chartData.skills[index].type] || '#fff';
 
   return (
     <text

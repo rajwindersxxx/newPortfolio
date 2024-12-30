@@ -13,9 +13,9 @@ export default function NavLinks({ navOpen, setNavOpen }: props) {
 
   return (
     <div className="nav_links lg:relative" onMouseLeave={mouseLeaveAnimation}>
-      <div className=" nav_line border-b w-16  left-0 -bottom-[1px] absolute border-teal-200 opacity-0"></div>
+      <div className="nav_line absolute -bottom-[1px] left-0 w-16 border-b border-teal-200 opacity-0"></div>
       <ul
-        className={`flex justify-center items-center lg:flex-row flex-col gap-8 lg:relative absolute lg:h-auto lg:w-auto lg:bg-transparent h-screen w-screen bg-backgroundColor/95  top-0 left-0 text-3xl lg:text-base lg:translate-x-0 transition-all ${
+        className={`absolute left-0 top-0 flex h-screen w-screen flex-col items-center justify-center gap-8 bg-backgroundColor/95 text-3xl transition-all lg:relative lg:h-auto lg:w-auto lg:translate-x-0 lg:flex-row lg:bg-transparent lg:text-base ${
           navOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
