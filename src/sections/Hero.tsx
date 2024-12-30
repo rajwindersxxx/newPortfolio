@@ -5,18 +5,18 @@ import { HeroAnimations } from '../hooks/useAnimations';
 export default function Hero() {
   return (
     <HeroAnimations>
-      <section id="home" className="h-full hero-section">
-        <div className="container mx-auto h-[100vh]  text-center flex flex-col gap-4 p-8 justify-center items-center">
+      <section id="home" className="hero-section h-full">
+        <div className="container mx-auto flex h-[100vh] flex-col items-center justify-center gap-4 p-8 text-center">
           <div className="mb-8"></div>
-          <div className="mb-2">
-            <h2 className="text-6xl md:text-7xl text-teal-100 mb-4">
+          <div className="heroHeading mb-2">
+            <h2 className="mb-4 text-6xl text-teal-100 md:text-7xl">
               Rajwinder Singh
             </h2>
-            <h3 className="text-3xl md:text-4xl text-teal-300 ">
+            <h3 className="text-3xl text-teal-300 md:text-4xl">
               A web Developer
             </h3>
           </div>
-          <div className="flex gap-4 justify-center mb-24">
+          <div className="mb-24 flex justify-center gap-4">
             <a href="#contact">
               <PrimaryButton>Hire me</PrimaryButton>
             </a>

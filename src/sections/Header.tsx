@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <HeaderAnimations>
       <header className="text-teal-300 glassBackground border-b-[1px] fixed w-full top-0 z-50 ">
-        <nav className="flex justify-between container py-4 px-4 m-auto items-center md:gap-4 sm:gap-2">
+        <nav className="flex justify-between container py-4 px-4 m-auto items-center md:gap-4 relative sm:gap-2">
           <HeaderTitle />
           <NavLinks navOpen={navOpen} setNavOpen={setNavOpen} />
           <nav className="flex">
