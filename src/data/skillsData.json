@@ -7,9 +7,11 @@
         "css3",
         "javascript",
         "tailwindCss",
+        "sass",
         "react",
-        "netlify",
-        "affinityDesign",
+        "reactRoute",
+        "Redux",
+        "Gsap",
         "motion",
         "rechart"
       ],
@@ -26,7 +28,8 @@
         "apache",
         "aws",
         "cloudflare",
-        "express"
+        "express",
+        "netlify"
       ],
       "img": "./img/backend.gif",
       "id": 2
@@ -41,7 +44,10 @@
         "aws",
         "cloudflare",
         "msOffice",
-        "chatGpt"
+        "github copilot",
+        "leaflet",
+        "github copilot",
+        "affinityDesign"
       ],
       "img": "./img/skills.gif",
       "id": 3

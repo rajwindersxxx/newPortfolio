@@ -12,7 +12,6 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin);
 ScrollTrigger.defaults({
   start: 'center 80%',
   end: 'center 80%',
-  markers: true,
 });
 
 export function HeaderAnimations({ children, scope }: props) {
