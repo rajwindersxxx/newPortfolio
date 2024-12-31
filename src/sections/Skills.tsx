@@ -14,9 +14,9 @@ export default function Skills() {
         ref={skillSection}
       >
         <h2 className="mb-8 text-center text-4xl">Skills and Experiences</h2>
-        <div className="mb-12 grid grid-cols-1 justify-center gap-x-8 gap-y-20 p-8 md:grid-cols-2 grid-row-[1fr_1fr_1fr]">
+        <div className="mb-12 space-y-20">
           {skillsData.map((data) => (
-            <SkillsDescription data={data} key={uuidv4()}/>
+            <SkillsDescription data={data} key={uuidv4()} />
           ))}
         </div>
         <BestSkills />
