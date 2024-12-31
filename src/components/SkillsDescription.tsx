@@ -7,13 +7,14 @@ interface props {
     title: string;
     description: string;
     tags: string[];
-  };
+  }
 }
 
-export default function SkillsDescription({ data }: props) {
+export default function SkillsDescription({ data}: props) {
+  
   return (
     <>
-      <div className={`${data.id === 2 ? 'md:justify-self-end' : ''}`}>
+      <div className={`${data.id%2 === 0 ? 'md:justify-self-end evenRowImgs' : 'oddRowImgs'} skillImg-${data.id}`}>
         <img
           src={data.img}
           alt="image"
@@ -21,11 +22,11 @@ export default function SkillsDescription({ data }: props) {
         />
       </div>
       <div
-        className={`flex flex-col gap-4 ${data.id === 2 ? 'md:row-start-2' : ''}`}
+        className={`flex flex-col gap-4 skillDesc ${data.id === 2 && 'md:row-start-2 '}`}
       >
         <h3 className="text-3xl">{data.title}</h3>
-        <p className={`mb-16 text-teal-400`}>{data.description}</p>
-        <div className="flex flex-wrap gap-2">
+        <p className={`mb-16 text-teal-400 min-h-40`}>{data.description}</p>
+        <div className="flex flex-wrap gap-2 tags">
           {data.tags.map((tag) => (
             <Tag tag={tag} key={uuidv4()} />
           ))}

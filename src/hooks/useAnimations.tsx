@@ -9,7 +9,11 @@ interface props {
 }
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
-
+ScrollTrigger.defaults({
+  start: 'center 80%',
+  end: 'center 80%',
+  markers: true,
+});
 
 export function HeaderAnimations({ children, scope }: props) {
   useGSAP(
@@ -51,11 +55,7 @@ export function AboutAnimations({ children, scope }: props) {
   useGSAP(
     () => {
       const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: 'img',
-          start: 'center 80%',
-          end: 'center 80%',
-        },
+        scrollTrigger: 'img',
       });
       tl.from('img', {
         scale: 0,
@@ -86,7 +86,97 @@ export function AboutAnimations({ children, scope }: props) {
 
   return <>{children}</>;
 }
+export function SkillsAnimations({ children, scope }: props) {
+  let evenRowImgs;
+  let oddRowImgs;
+  let skillDesc;
+  let tags;
+  useGSAP(
+    () => {
+      evenRowImgs = gsap.utils.toArray('.evenRowImgs');
+      oddRowImgs = gsap.utils.toArray('.oddRowImgs');
+      skillDesc = gsap.utils.toArray('.skillDesc');
+      tags = gsap.utils.toArray('.tags');
+      gsap.from('h2', {
+        scrollTrigger: 'h2',
+        Opacity: 0,
+        yPercent: -60,
+        duration: 1,
+        ease: 'back',
+      });
 
+      // images animation
+
+      oddRowImgs.forEach((box) => {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: box as Element,
+          },
+        });
+        tl.from(box as Element, {
+          xPercent: -20,
+          opacity: 0,
+          duration: 1,
+          ease: 'back',
+        });
+      });
+      evenRowImgs.forEach((box) => {
+        const tl = gsap.timeline({
+          scrollTrigger: {
+            trigger: box as Element,
+          },
+        });
+        tl.from(box as Element, {
+          xPercent: 20,
+          opacity: 0,
+          duration: 1,
+          ease: 'back',
+        });
+      });
+
+      (skillDesc as Element[]).forEach((box: Element) => {
+        const headings = box.querySelectorAll('h3');
+        const skillDesc = box.querySelectorAll('p');
+        headings.forEach((heading: Element) => {
+          gsap.from(heading, {
+            scrollTrigger: heading,
+            opacity: 0,
+            yPercent: -100,
+            duration: 2,
+          });
+        });
+        skillDesc.forEach((desc: Element) => {
+          gsap.from(desc, {
+            scrollTrigger: desc,
+            opacity: 0,
+            // yPercent: -10,
+            duration: 2,
+            text: '',
+          });
+        });
+      });
+      (tags as Element[]).forEach((tag: Element) => {
+        const eachTag = tag.querySelectorAll('.tag');
+        gsap.from(eachTag, {
+          scrollTrigger: {
+            trigger: eachTag,
+          },
+          // duration: 0.1,
+          opacity: 0,
+          xPercent: -100,
+          ease: 'power1.inOut',
+        
+          stagger: {
+            each: 0.2,
+          },
+        });
+      });
+    },
+    { scope: scope },
+  );
+
+  return <>{children}</>;
+}
 // gsap.to('p', {
 //   scrollTrigger: 'p',
 //   duration: 2,
