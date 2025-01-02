@@ -156,30 +156,32 @@ const renderCustomBarLabel = ({
 
 export default function SkillChart() {
   return (
-    <ResponsiveContainer width="100%" height={450}>
-      <BarChart
-        data={chartData.skills}
-        layout="vertical"
-        margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
-      >
-        <XAxis type="number" tick={renderYAxisTick} />
-        <YAxis type="category" dataKey="name" tick={renderXAxisTick} />
-        <Bar
-          dataKey="percent"
-          unit="%"
-          barSize={35}
-          label={renderCustomBarLabel}
+    <div className="best_skills">
+      <ResponsiveContainer width="100%" height={450}>
+        <BarChart
+          data={chartData.skills}
+          layout="vertical"
+          margin={{
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
         >
-          {chartData.skills.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={chartData.colors[entry.type]} />
-          ))}
-        </Bar>
-      </BarChart>
-    </ResponsiveContainer>
+          <XAxis type="number" tick={renderYAxisTick} />
+          <YAxis type="category" dataKey="name" tick={renderXAxisTick} />
+          <Bar
+            dataKey="percent"
+            unit="%"
+            barSize={35}
+            label={renderCustomBarLabel}
+          >
+            {chartData.skills.map((entry, index) => (
+              <Cell key={`cell-${index}`} fill={chartData.colors[entry.type]} />
+            ))}
+          </Bar>
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
   );
 }

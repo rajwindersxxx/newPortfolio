@@ -14,6 +14,8 @@ ScrollTrigger.defaults({
   end: 'center 80%',
 });
 
+// render animation
+
 export function HeaderAnimations({ children, scope }: props) {
   useGSAP(
     () => {
@@ -85,47 +87,54 @@ export function AboutAnimations({ children, scope }: props) {
 
   return <>{children}</>;
 }
+
+// scroll animations
 export function SkillsAnimations({ children, scope }: props) {
   let evenRowImgs;
   let oddRowImgs;
   let skillDesc;
   let tags;
+  let skillMainHeadings;
   useGSAP(
     () => {
       evenRowImgs = gsap.utils.toArray('.evenRowImgs');
       oddRowImgs = gsap.utils.toArray('.oddRowImgs');
       skillDesc = gsap.utils.toArray('.skillDesc');
       tags = gsap.utils.toArray('.tags');
-      gsap.from('h2', {
-        scrollTrigger: 'h2',
-        Opacity: 0,
-        yPercent: -60,
-        duration: 1,
-        ease: 'back',
+      skillMainHeadings = gsap.utils.toArray('h2');
+
+      (skillMainHeadings as Element[]).forEach((heading: Element) => {
+        gsap.from(heading, {
+          scrollTrigger: heading,
+          Opacity: 0,
+          yPercent: -60,
+          duration: 1,
+          ease: 'back',
+        });
       });
 
       // images animation
 
-      oddRowImgs.forEach((box) => {
+      (oddRowImgs as Element[]).forEach((box: Element) => {
         const tl = gsap.timeline({
           scrollTrigger: {
-            trigger: box as Element,
+            trigger: box,
           },
         });
-        tl.from(box as Element, {
+        tl.from(box, {
           xPercent: -20,
           opacity: 0,
           duration: 1,
           ease: 'back',
         });
       });
-      evenRowImgs.forEach((box) => {
+      (evenRowImgs as Element[]).forEach((box : Element) => {
         const tl = gsap.timeline({
           scrollTrigger: {
-            trigger: box as Element,
+            trigger: box,
           },
         });
-        tl.from(box as Element, {
+        tl.from(box, {
           xPercent: 20,
           opacity: 0,
           duration: 1,
@@ -136,7 +145,7 @@ export function SkillsAnimations({ children, scope }: props) {
       (skillDesc as Element[]).forEach((box: Element) => {
         const headings = box.querySelectorAll('h3');
         const skillDesc = box.querySelectorAll('p');
-        headings.forEach((heading: Element) => {
+        (headings).forEach((heading: Element) => {
           gsap.from(heading, {
             scrollTrigger: heading,
             opacity: 0,
@@ -164,7 +173,7 @@ export function SkillsAnimations({ children, scope }: props) {
           opacity: 0,
           xPercent: -100,
           ease: 'power1.inOut',
-        
+
           stagger: {
             each: 0.2,
           },
@@ -176,13 +185,3 @@ export function SkillsAnimations({ children, scope }: props) {
 
   return <>{children}</>;
 }
-// gsap.to('p', {
-//   scrollTrigger: 'p',
-//   duration: 2,
-//   text: `A passionate programmer and web developer who began coding at 23
-//         during college. My love for creating impactful digital experiences
-//         drives my dream of becoming a recognized programmer, developing
-//         applications that make a difference. Here’s a bit more about my
-//         skills, and projects!`,
-//   ease: 'none',
-// });
